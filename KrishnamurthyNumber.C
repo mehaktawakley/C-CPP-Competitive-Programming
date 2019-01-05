@@ -19,7 +19,6 @@ Input:
 Output:
 YES
 NO
-
 */
 
 #include <stdio.h>
