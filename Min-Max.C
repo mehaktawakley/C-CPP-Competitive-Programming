@@ -36,14 +36,12 @@ As you can see, the minimal sum is 1+2+3+4=10 and the maximal sum is 2+3+4+5=14.
 
 #include<stdio.h>
 
-int main()
-{
+int main(){
     int n,i,j;
     long long int a[1000000],sum=0,min=999999,max=0;
     
     scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++){
         scanf("%lld",&a[i]);
         if(a[i]>=max)
           max=a[i];
@@ -54,8 +52,6 @@ int main()
     
     long long int suml=sum-min;
     long long int sums=sum-max;
-    
     printf("%lld ",sums);
     printf("%lld",suml);
-
 }
